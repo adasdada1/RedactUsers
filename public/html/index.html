@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h1>Пользователи</h1>
+      <form>
+        <label for="username">Имя пользователя</label>
+        <input type="text" name="username" required />
+        <div id="nameError" style="display: none">
+          Неверно введено имя. Попробуйте еще раз.
+        </div>
+        <label for="age">Возраст пользователя</label>
+        <input type="text" name="age" required />
+        <div id="ageError" style="display: none">
+          Неверно введен возраст. Попробуйте еще раз.
+        </div>
+        <div class="buttons">
+          <button id="find" class="formButton">Найти</button>
+          <button id="save" style="display: none" class="formButton">
+            Сохранить
+          </button>
+          <button id="add" class="formButton">Добавить</button>
+          <button id="reset" type="reset" class="formButton">Сбросить</button>
+          <button id="back" style="display: none" class="formButton">
+            Назад
+          </button>
+        </div>
+      </form>
+      <ul class="list"></ul>
+    </div>
+    <script src='../scripts/purify.min.js'></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

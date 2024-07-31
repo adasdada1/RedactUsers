@@ -1,0 +1,19 @@
+@media (max-width: 650px) {
+  .form-wrapper {
+    width: 90vw;
+  }
+  .form-wrapper h1 {
+    font-size: clamp(50px, 10vw, 70px);
+  }
+  .form-wrapper label {
+    font-size: clamp(25px, 5vw, 33px);
+  }
+  .form-wrapper .formButton {
+    font-size: clamp(25px, 5vw, 35px);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+}
