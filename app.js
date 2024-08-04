@@ -4,6 +4,7 @@ import { router } from "./routes/index.mjs";
 
 const app = express();
 const client = new MongoClient("mongodb://127.0.0.1:27017/");
+const port = process.env.PORT || 3000;
 
 (async () => {
   try {
