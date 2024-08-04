@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
   try {
     await client.connect();
     app.locals.collection = client.db("mongo").collection("users");
-    app.listen(3000, () => console.log("Сервер запущен"));
+    app.listen(port, () => console.log("Сервер запущен"));
   } catch (err) {
     return console.log(err);
   }
